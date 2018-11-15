@@ -5,6 +5,7 @@ MAINTAINER Brian J. Cardiff <bcardiff@gmail.com>
 ENV RCLONE_VERSION=current
 ENV ARCH=amd64
 ENV SYNC_SRC=
+ENV SYNC_SRC_ZIP_NAME=
 ENV SYNC_DEST=
 ENV SYNC_OPTS=-v
 ENV RCLONE_OPTS="--config /config/rclone.conf"
