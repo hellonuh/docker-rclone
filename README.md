@@ -21,6 +21,13 @@ rclone is a command line program to sync files and directories to and from:
 
 ## Usage
 
+
+### My Conf
+```
+docker run -dit --restart=always --name=mybckp -v ~/.config/rclone:/config -v my-data:/source -e SYNC_SRC="/source" -e SYNC_DEST="gdrive:autobckp/" -e SYNC_SRC_ZIP_NAME="my-data-auto.tar.gz" -e TZ="Asia/Calcutta" -e CRON="0 * * * *" -e FORCE_SYNC=1 hellonuh/rclone
+
+```
+
 ### Configure rclone
 
 rclone needs a configuration file where credentials to access different storage
